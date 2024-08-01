@@ -16,23 +16,24 @@
 
 ### Create Conda Environment
 ```bash
-conda env create -n StableDiffusion -f environment.yaml
-conda activate StableDiffusion
+conda env create -f stablediffusion/environment.yaml
+conda activate ldm
 ```
 
-### Python packagess
+### Python packages
 ```bash
 conda install pytorch==1.12.1 torchvision==0.13.1 -c pytorch cudatoolkit
 pip install transformers==4.19.2 diffusers invisible-watermark
 pip install -e .
-conda install regex transformers
 ```
 
-### Set up Xformers library (to utilize CUDA)
+### Set up Xformers library (to utilize CUDA)6
 ```bash
-set CUDA_HOME=/usr/local/cuda-11.4
+setx CUDA_HOME "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1"
 conda install -c nvidia/label/cuda-11.4.0 cuda-nvcc
 conda install -c conda-forge gcc
+conda install -c conda-forge m2w64-gcc=5.3.0
+
 
 cd ..
 git clone https://github.com/facebookresearch/xformers.git
@@ -53,3 +54,8 @@ cd ../Stable-Diffusion-Performance
 2. **Stable Diffusion 2.1 Base Model:**
 [Hugging Face Model Hub](https://huggingface.co/stabilityai/stable-diffusion-2-1-base):
 
+
+### Run test script to generate test image
+```
+testStableDiffusion.bat
+```
