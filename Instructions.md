@@ -59,3 +59,5 @@ cd ../Stable-Diffusion-Performance
 ```
 testStableDiffusion.bat
 ```
+
+### Ensure that there are images in outputs/

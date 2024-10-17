@@ -1,3 +1,6 @@
 [submodule "stablediffusion"]
 	path = stablediffusion
 	url = https://github.com/Stability-AI/stablediffusion.git
+[submodule "stable-diffusion-directml"]
+	path = stable-diffusion-directml
+	url = https://github.com/microsoft/Stable-Diffusion-WebUI-DirectML.git

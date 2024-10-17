@@ -1,1 +1,0 @@
-python stablediffusion/scripts/txt2img.py --prompt "a professional photograph of an astronaut riding a horse" --ckpt weights/v2-1_512-ema-pruned.ckpt --config stablediffusion/configs/stable-diffusion/v2-inference-v.yaml --H 512 --W 512 --device cuda
